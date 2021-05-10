@@ -1,0 +1,135 @@
+{
+    "$schema": "https://llrpjs.github.io/schema/core/encoding/json/1.0/llrp-1x0.schema.json",
+    "id": 1,
+    "type": "ADD_ROSPEC",
+    "data": {
+        "ROSpec": {
+            "ROSpecID": 1,
+            "Priority": 0,
+            "CurrentState": "Disabled",
+            "ROBoundarySpec": {
+                "ROSpecStartTrigger": {
+                    "ROSpecStartTriggerType": "Immediate"
+                },
+                "ROSpecStopTrigger": {
+                    "ROSpecStopTriggerType": "Null",
+                    "DurationTriggerValue": 0
+                }
+            },
+            "AISpec": {
+                "AntennaIDs": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "AISpecStopTrigger": {
+                    "AISpecStopTriggerType": "Null",
+                    "DurationTrigger": 0
+                },
+                "InventoryParameterSpec": {
+                    "InventoryParameterSpecID": 1,
+                    "AntennaConfiguration": [
+                        {
+                            "AntennaID": 1,
+                            "RFTransmitter": {
+                                "HopTableID": 0,
+                                "ChannelIndex": 0,
+                                "TransmitPower": 27
+                            },
+                            "C1G2InventoryCommand": {
+                                "TagInventoryStateAware": false,
+                                "C1G2RFControl": {
+                                    "ModeIndex": 0,
+                                    "Tari": 0
+                                },
+                                "C1G2SingulationControl": {
+                                    "Session": 0,
+                                    "TagPopulation": 0,
+                                    "TagTransitTime": 0
+                                }
+                            }
+                        },
+                        {
+                            "AntennaID": 2,
+                            "RFTransmitter": {
+                                "HopTableID": 0,
+                                "ChannelIndex": 0,
+                                "TransmitPower": 27
+                            },
+                            "C1G2InventoryCommand": {
+                                "TagInventoryStateAware": false,
+                                "C1G2RFControl": {
+                                    "ModeIndex": 0,
+                                    "Tari": 0
+                                },
+                                "C1G2SingulationControl": {
+                                    "Session": 0,
+                                    "TagPopulation": 0,
+                                    "TagTransitTime": 0
+                                }
+                            }
+                        },
+                        {
+                            "AntennaID": 3,
+                            "RFTransmitter": {
+                                "HopTableID": 0,
+                                "ChannelIndex": 0,
+                                "TransmitPower": 27
+                            },
+                            "C1G2InventoryCommand": {
+                                "TagInventoryStateAware": false,
+                                "C1G2RFControl": {
+                                    "ModeIndex": 0,
+                                    "Tari": 0
+                                },
+                                "C1G2SingulationControl": {
+                                    "Session": 0,
+                                    "TagPopulation": 0,
+                                    "TagTransitTime": 0
+                                }
+                            }
+                        },
+                        {
+                            "AntennaID": 4,
+                            "RFTransmitter": {
+                                "HopTableID": 0,
+                                "ChannelIndex": 0,
+                                "TransmitPower": 27
+                            },
+                            "C1G2InventoryCommand": {
+                                "TagInventoryStateAware": false,
+                                "C1G2RFControl": {
+                                    "ModeIndex": 0,
+                                    "Tari": 0
+                                },
+                                "C1G2SingulationControl": {
+                                    "Session": 0,
+                                    "TagPopulation": 0,
+                                    "TagTransitTime": 0
+                                }
+                            }
+                        }
+                    ],
+                    "ProtocolID": "EPCGlobalClass1Gen2"
+                }
+            },
+            "ROReportSpec": {
+                "ROReportTrigger": "Upon_N_Tags_Or_End_Of_AISpec",
+                "N": 1,
+                "TagReportContentSelector": {
+                    "EnableROSpecID": false,
+                    "EnableSpecIndex": false,
+                    "EnableInventoryParameterSpecID": false,
+                    "EnableAntennaID": false,
+                    "EnableChannelIndex": false,
+                    "EnablePeakRSSI": false,
+                    "EnableFirstSeenTimestamp": true,
+                    "EnableLastSeenTimestamp": true,
+                    "EnableTagSeenCount": false,
+                    "EnableAccessSpecID": false
+                }
+            }
+        }
+    }
+}
